@@ -1,0 +1,10 @@
+cmd.CommandText = "SELECT count(*) FROM Category WHERE Title='Title'"; 
+int count = Convert.ToInt32(cmd.ExecuteScalar());
+if(count == 0)
+{
+    //отправка email
+}
+else 
+{
+    //ошибка, email не отправляется
+}
