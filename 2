@@ -1,0 +1,3 @@
+SELECT Name FROM Users ORDER BY Rating DESC  LIMIT 10
+
+SELECT Title FROM Category WHERE id = (SELECT Category_id FROM Users WHERE Name = 'A' AND NOT Name ='B')
